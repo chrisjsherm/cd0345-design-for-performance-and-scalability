@@ -1,22 +1,17 @@
-﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary,
-My Estimate,US East (N. Virginia),CDN,Amazon CloudFront,0,7718.6,92623.2,USD,"Data transfer out to internet (109700 GB per month), Number of requests (HTTPS) (61400000 per month)",
-My Estimate,US East (N. Virginia),Webserver,Amazon EC2,0,105.343995,1264.13,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (0 GB per month), DT Outbound: Amazon CloudFront (610 GB per month), DT Outbound: Internet (29 GB per month), DT Intra-Region: (0 GB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 2, Peak: 5, Duration of peak: 8 Hr 0 Min)), Advance EC2 instance (t2.medium), Pricing strategy (EC2 Instance Savings Plans 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)",
-My Estimate,US East (N. Virginia),API server,Amazon EC2,0,108.223995,1298.69,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (61 GB per month), DT Intra-Region: (0 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 2, Peak: 5, Duration of peak: 8 Hr 0 Min)), Advance EC2 instance (t2.medium), Pricing strategy (EC2 Instance Savings Plans 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)",
-My Estimate,US East (N. Virginia),Live-stream server,Amazon EC2,0,853.613328,10243.36,USD,"Operating system (Linux), Storage amount (120 GB), DT Inbound: Internet (671 TB per month), DT Outbound: Amazon CloudFront (671 TB per month), DT Intra-Region: (0 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 2, Peak: 3, Duration of peak: 8 Hr 0 Min)), Advance EC2 instance (c7g.xlarge), Pricing strategy (EC2 Instance Savings Plans 1 Year  None upfront), Snapshot Frequency (Hourly), Amount changed per snapshot (15 GB)",
-My Estimate,US East (N. Virginia),Graph DB,Amazon Neptune,0,157.78,1893.36,USD,"Number of workbench instances (0), Workbench Instances (ml.t2.2xlarge), Usage (Neptune Workbench instances) (100 %Utilized/Month), Number of instances (2), Neptune instance type (db.t3.medium), Usage (Neptune instances) (100 %Utilized/Month), Data stored (5 GB), Backup storage (600 GB)",
-My Estimate,US East (N. Virginia),Object storage,S3 Standard,0,1511.85,18142.2,USD,S3 Standard storage (64 TB per month),
-My Estimate,US East (N. Virginia),Object storage,S3 Standard - Infrequent Access,0,3437.19,41246.28,USD,S3 Standard-IA storage (268 TB per month),
-My Estimate,US East (N. Virginia),Object storage,Data Transfer,0,1173.2,14078.4,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (13200 GB per month)",
-,,,,,,,,,
-,,,,,,,,,
-I added elasticity to each of my EC2 instances. I expanded S3 to be able to store vieo in 1080p and store 8 years of data in S3 IA. I expanded CloudFront to serve all videos in 1080p.,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Increased Estimate,US East (N. Virginia),Webserver,Amazon EC2,0,187.67,2252.04,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Amazon CloudFront (610 GB per month), DT Outbound: Internet (20 GB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t2.xlarge), Pricing strategy (EC2 Instance Savings Plans 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Increased Estimate,US East (N. Virginia),API server,Amazon EC2,0,191.27,2295.24,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (60 GB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t2.xlarge), Pricing strategy (EC2 Instance Savings Plans 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Increased Estimate,US East (N. Virginia),Live-stream server,Amazon EC2,0,1408.506,16902.07,USD,"Operating system (Linux), Storage amount (120 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Amazon CloudFront (675 TB per month), DT Outbound: Internet (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 2), Advance EC2 instance (c7g.2xlarge), Pricing strategy (EC2 Instance Savings Plans 1 Year  None upfront), Snapshot Frequency (Hourly), Amount changed per snapshot (30 GB)"
+Increased Estimate,US East (N. Virginia),Graph DB,Amazon Neptune,0,156.18,1874.16,USD,"Number of workbench instances (0), Workbench Instances (ml.t2.2xlarge), Usage (Neptune Workbench instances) (100 %Utilized/Month), Number of instances (2), Neptune instance type (db.t3.medium), Usage (Neptune instances) (100 %Utilized/Month), Data stored (5 GB), Backup storage (600 GB)"
+Increased Estimate,US East (N. Virginia),Object store,S3 Standard,0,4106.24,49274.88,USD,S3 Standard storage (180 TB per month)
+Increased Estimate,US East (N. Virginia),Object store,S3 Standard - Infrequent Access,0,3072,36864,USD,S3 Standard-IA storage (240 TB per month)
+Increased Estimate,US East (N. Virginia),Object store,Data Transfer,0,0,0,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Amazon CloudFront (105 TB per month)"
+Increased Estimate,US East (N. Virginia),CDN,Amazon CloudFront,0,7587.8,91053.6,USD,"Data transfer out to internet (105 TB per month), Number of requests (HTTPS) (61400000 per month)"
+Increased Estimate,US East (N. Virginia),VPC (NAT Gateway),VPN Connection,0,0,0,USD,Working days per month (22)
+Increased Estimate,US East (N. Virginia),VPC (NAT Gateway),Network Address Translation (NAT) Gateway,0,32.89,394.68,USD,Number of NAT Gateways (1)
+Increased Estimate,US East (N. Virginia),Load balancers,Application Load Balancer,0,1523.83,18285.96,USD,Number of Application Load Balancers (3)
+Increased Estimate,US East (N. Virginia),Elastic IP,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (2), Number of EIPs per instance (1)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+I expanded the size of my servers to handle additional traffic generated by improvements to UX. I expanded S3 to be able to store vieo in 1080p and store 8 years of data in S3 IA. I expanded CloudFront to serve all videos in 1080p.,,,,,,,,
